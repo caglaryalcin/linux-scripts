@@ -30,7 +30,7 @@ This script does exactly the following;
 - Install http-tools
 - Install mirth connect last version
 - Install pgAdmin4
-- Set user passwords
+- Set user passwords for pgadmin & mirth
 
 
 > **_NOTE:_**  After the ubuntu-based distro's is first setup, you can install Mirth Connect and pgAdmin4 in with this script.
@@ -57,7 +57,7 @@ This script does exactly the following;
 - Install http-tools
 - Install mirth connect 3.12.0 & administrator launcher 1.2.0
 - Install pgAdmin4
-- Set user passwords
+- Set user passwords for pgadmin & mirth
 
 
 > **_NOTE:_**  After the ubuntu-based distro's is first setup, you can install Mirth Connect and pgAdmin4 in with this script. .When installing mirth, uncheck administrator launcher. After that, the installation for version 1.2.0 will start.
