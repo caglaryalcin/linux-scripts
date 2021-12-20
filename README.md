@@ -24,7 +24,6 @@ This script does exactly the following;
 
 - Checks your internet
 - System update & upgrade
-- Install vmware tools from iso & open-vm-tools
 - Install http-tools
 - Install mirth connect last version
 - Install pgAdmin4
@@ -51,7 +50,6 @@ This script does exactly the following;
 
 - Checks your internet
 - System update & upgrade
-- Install vmware tools from iso & open-vm-tools
 - Install http-tools
 - Install mirth connect 3.12.0 & administrator launcher 1.2.0
 - Install pgAdmin4
