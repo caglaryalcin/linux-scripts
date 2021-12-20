@@ -3,7 +3,7 @@
 Contains various automated scripts for Linux..
 
 
-1. [Install Mirth & pgAdmin4](https://github.com/caglaryalcin/linux-scripts/blob/main/README.md#install-mirth--pgadmin4)
+1. [Install Mirth & pgAdmin4](https://github.com/caglaryalcin/linux-scripts#install-mirth--pgadmin4)
 
 ### Install Mirth & pgAdmin4 
 
