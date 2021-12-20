@@ -24,13 +24,6 @@ fi
 echo "${Green}System updating.."${NC}
 sleep 1
 apt update && apt upgrade -y
-echo "\e[1;32m Installing vmware tools.. \e[0m"
-apt install -y open-vm-tools
-apt install -y open-vm-tools-desktop
-curl -J -O https://fujifilm.cloud/index.php/s/SJPKZ4RYrp7treB/download
-tar -zxvf VMwareTools-10.3.2-9925305.tar.gz
-cd vmware-tools-distrib
-./vmware-install.pl -d
 echo "${Green}Installing https tools.."${NC}
 sleep 1
 apt install -y ca-certificates
