@@ -32,7 +32,7 @@ echo "${Green}Mirth downloading.."${NC}
 sleep 1
 wget http://downloads.mirthcorp.com/connect/3.12.0.b2650/mirthconnect-3.12.0.b2650-unix.sh
 echo "${Green}Installing mirth.. "
-sleep 5
+sleep 2
 chmod +x mirthconnect-3.12.0.b2650-unix.sh
 ./mirthconnect-3.12.0.b2650-unix.sh
 echo "${Green}Installing pgAdmin4.."${NC}
@@ -49,7 +49,6 @@ sleep 1
 echo "${Green}Configure the webserver to '/usr/pgadmin4/bin/setup-web.sh', if you installed pgadmin4-web"${NC}
 echo "${Green}Deleting setup files.."${NC}
 rm -rf mirthconnect-3.12.0.b2650-unix.sh
-sleep 1
 echo "${Green}Setting passwords.. "${NC}
 sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'admin';"
 echo "pgAdmin default password:${Green}admin${NC}"
