@@ -11,7 +11,7 @@ Contains various automated scripts for Linux..
 Before running, you must give run permission with the following command.
 
 ```
-wget https://github.com/caglaryalcin/linux-scripts/blob/main/scripts/pg4-mirth-last.sh
+wget https://raw.githubusercontent.com/caglaryalcin/linux-scripts/main/scripts/pg4-mirth-last.sh
 ```
 ```
 sudo chmod +x pg4-mirth-last.sh
@@ -38,7 +38,7 @@ This script does exactly the following;
 Before running, you must give run permission with the following command.
 
 ```
-wget https://github.com/caglaryalcin/linux-scripts/blob/main/scripts/pg4-mirth-adm-launc-1.2.0.sh
+wget https://raw.githubusercontent.com/caglaryalcin/linux-scripts/main/scripts/pg4-mirth-adm-launc-1.2.0.sh
 ```
 ```
 sudo chmod +x pg4-mirth-adm-launc-1.2.0.sh
