@@ -1,5 +1,3 @@
-# Linux Scripts
-
 ## Description
 
 Contains various automated scripts for Linux..
