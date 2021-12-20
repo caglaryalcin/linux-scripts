@@ -7,7 +7,6 @@ Contains various automated scripts for Linux..
 
 1. [Install Mirth & pgAdmin4](https://github.com/caglaryalcin/linux-scripts/blob/main/scripts/pg4-mirth-last.sh)
    - [Mirth Last Ver. with Admin Launcher 1.2.0 & pgAdmin4](https://github.com/caglaryalcin/linux-scripts#mirth-connect-last-ver-with-administrator-launcher-120-pgadmin4-last-ver)
-     - Second nested list item
 
 ### Install Mirth & pgAdmin4 
 
