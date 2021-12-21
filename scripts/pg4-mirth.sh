@@ -7,7 +7,6 @@ nc -z 1.1.1.1 53  >/dev/null 2>&1
 online=$?
 if [ $online -eq 0 ]; then
     echo "${Green}The network is up"
-	sleep 1
 else
     echo "${RED}The network is down"
 	exit
