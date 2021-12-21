@@ -1,23 +1,23 @@
+#!/bin/bash
 RED='\033[0;31m'
 Green='\033[0;32m'
 NC='\033[0m'
 echo "${Green}Checking your Internet connection.."${NC}
-nc -z 1.1.1.1 53  >/dev/null 2>&1
+nc -z 1.1.1.1 53  >/dev/null
 online=$?
 if [ $online -eq 0 ]; then
     echo "${Green}The network is up"
 else
     echo "${RED}The network is down"
-	exit
+        exit
 fi
 echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
     echo "DNS resolve is up"
-	sleep 2
 else
     echo "DNS not resolved"
-	exit
+        exit
 fi
 echo "${Green}System updating.."${NC}
 sleep 1
@@ -37,7 +37,7 @@ echo "${Green}Installing pgAdmin4.."${NC}
 apt install -y postgresql postgresql-contrib
 sleep 1
 curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
-sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/focal pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update' -y
+sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/focal pgadmin4 main" > /etc/apt/sources.lis>
 apt install -y pgadmin4
 sleep 1
 apt install -y pgadmin4-desktop
@@ -50,5 +50,6 @@ rm -rf mirthconnect-3.12.0.b2650-unix.sh
 echo "${Green}Setting passwords.. "${NC}
 sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'admin';"
 echo "pgAdmin default password:${Green}admin${NC}"
+echo "Mirth default user:${Green}admin${NC} password:${Green}admin${NC}"
 echo "Mirth default user:${Green}admin${NC} password:${Green}admin${NC}"
 echo "'${Green}admin${NC}' password has been set for ${Green}postgres${NC} user"
