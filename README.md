@@ -2,15 +2,14 @@
 
 Contains various automated scripts for Linux..
 
-<details><summary>Install Mirth & pgAdmin4</summary>
- 
-### Install Mirth & pgAdmin4
+<details><summary>Install Mirth & pgAdmin4</summary>&nbsp;
 
-Before running, you must give run permission with the following command.
+Download script with wget.
 
 ```
 wget https://raw.githubusercontent.com/caglaryalcin/linux-scripts/main/scripts/pg4-mirth.sh
 ```
+Before running, you must give run permission with the following command.
 ```
 sudo chmod +x pg4-mirth.sh
 ```
