@@ -2,7 +2,7 @@ RED='\033[0;31m'
 Green='\033[0;32m'
 NC='\033[0m'
 echo "${Green}Checking your Internet connection.."${NC}
-nc -z 1.1.1.1 53  >/dev/null
+nc -z 1.1.1.1 53  >/dev/null 2>&1
 online=$?
 if [ $online -eq 0 ]; then
     echo "${Green}The network is up"
