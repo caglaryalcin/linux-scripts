@@ -1,8 +1,6 @@
 ## Description
 
-Contains various automated scripts for Linux..
-
-<details><summary>Install Mirth & pgAdmin4</summary>&nbsp;
+After the ubuntu-based distro's is first setup, you can install Mirth Connect and pgAdmin4 in with this script.
 
 Download script with wget.
 
@@ -26,7 +24,4 @@ This script does exactly the following;
 - Install pgAdmin4
 - Set user passwords for pgadmin & mirth
 
-
-> **_NOTE:_**  After the ubuntu-based distro's is first setup, you can install Mirth Connect and pgAdmin4 in with this script.
 <p>
-</details>
