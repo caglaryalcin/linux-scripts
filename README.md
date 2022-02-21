@@ -44,7 +44,7 @@ sudo chmod +x dark.sh
 bash dark.sh
 ```
 ```
-wget https://github.com/caglaryalcin/linux-scripts/blob/main/scripts/after-format.sh
+wget https://raw.githubusercontent.com/caglaryalcin/linux-scripts/main/scripts/after-format.sh
 ```
 ```
 sudo chmod +x after-format.sh
