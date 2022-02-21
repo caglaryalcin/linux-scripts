@@ -5,7 +5,7 @@ After the ubuntu-based distro's is first setup, you can install Mirth Connect an
 Download script with wget.
 
 ```
-wget https://raw.githubusercontent.com/caglaryalcin/linux-scripts/main/scripts/pg4-mirth.sh
+wget https://raw.githubusercontent.com/caglaryalcin/linux-scripts/main/pg4-mirth.sh
 ```
 Before running, you must give run permission with the following command.
 ```
