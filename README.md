@@ -33,7 +33,26 @@ This script does exactly the following;
 <details><summary>after-format.sh</summary>&nbsp;
   
 My settings and softwares for Linux Mint.
-  
+
+```
+wget https://raw.githubusercontent.com/caglaryalcin/linux-scripts/main/scripts/dark.sh
+```
+```
+sudo chmod +x dark.sh
+```
+```
+bash dark.sh
+```
+```
+wget https://github.com/caglaryalcin/linux-scripts/blob/main/scripts/after-format.sh
+```
+```
+sudo chmod +x after-format.sh
+```
+```
+sudo ./after-format.sh
+```  
+
 This script does exactly the following;
 
 - Checks your internet
@@ -53,7 +72,10 @@ This script does exactly the following;
 - Install deluge
 - Install gparted
   
+</details>
+
+<details><summary>dark.sh</summary>&nbsp;
   
-- Set user passwords for pgadmin & mirth
+This script just does sets dark theme for Linux Mint Cinnamon.
   
 </details>
