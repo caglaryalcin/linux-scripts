@@ -1,5 +1,8 @@
 ## Description
 
+
+<details><summary>pg4-mirth.sh</summary>&nbsp;
+  
 After the ubuntu-based distro's is first setup, you can install Mirth Connect and pgAdmin4 in with this script.
 
 Download script with wget.
@@ -25,3 +28,32 @@ This script does exactly the following;
 - Set user passwords for pgadmin & mirth
 
 <p>
+</details>
+
+<details><summary>after-format.sh</summary>&nbsp;
+  
+My settings and softwares for Linux Mint.
+  
+This script does exactly the following;
+
+- Checks your internet
+- Settings resolution 1920x1080
+- System update & upgrade
+- Install vMware workstation
+- Install wine
+- Install libreoffice
+- Install thunderbird
+- Install putty
+- Install steam
+- Install anydesk
+- Install flameshot
+- Install sublime-text
+- Install vlc
+- Install filezilla
+- Install deluge
+- Install gparted
+  
+  
+- Set user passwords for pgadmin & mirth
+  
+</details>
