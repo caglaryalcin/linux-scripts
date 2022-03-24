@@ -56,5 +56,4 @@ for i in $packages; do
 done
 
 rm -rf winehq.key
-rm -rf after-format.sh
 rm -rf dark.sh
