@@ -25,6 +25,9 @@ xrandr -s 1920x1080 &> /dev/null
 
 echo "${Green}System Updating.."${NC}
 sleep 1
+apt install apt-transport-https curl -y > /dev/null 2>&1
+curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list > /dev/null
 add-apt-repository multiverse
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add - >/dev/null 2>&1
 echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list > /dev/null
@@ -46,8 +49,8 @@ echo "${Green}Installing Wine.."${NC}
 apt update >/dev/null 2>&1
 apt install --install-recommends winehq-stable -y >/dev/null 2>&1
 
-echo "${Green}Installing libreoffice, thunderbird, putty, steam, anydesk, flameshot, sublime-text, vlc, filezilla, deluge and gparted.."${NC}
-packages="libreoffice thunderbird putty steam anydesk flameshot sublime-text vlc filezilla deluge gparted"
+echo "${Green}Installing libreoffice, thunderbird, putty, steam, anydesk, flameshot, sublime-text, vlc, filezilla, deluge, gparted and brave browser.."${NC}
+packages="libreoffice thunderbird putty steam anydesk flameshot sublime-text vlc filezilla deluge brave-browser gparted"
 for i in $packages; do
-  sudo apt install -y $i > /dev/null 2>&1
+  apt install -y $i > /dev/null 2>&1
 done
