@@ -54,3 +54,7 @@ packages="libreoffice thunderbird putty steam anydesk flameshot sublime-text vlc
 for i in $packages; do
   apt install -y $i > /dev/null 2>&1
 done
+
+rm -rf winehq.key
+rm -rf after-format.sh
+rm -rf dark.sh
