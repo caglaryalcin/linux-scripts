@@ -56,7 +56,7 @@ sudo ./after-format.sh
 This script does exactly the following;
 
 - Checks your internet
-- Settings resolution 1920x1080
+- Settings resolution 1920x1080 for single monitor
 - System update & upgrade
 - Install vMware workstation
 - Install wine
