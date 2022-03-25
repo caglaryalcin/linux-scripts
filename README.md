@@ -3,7 +3,7 @@
 
 <details><summary>pg4-mirth.sh</summary>&nbsp;
   
-After the ubuntu-based distro's is first setup, you can install Mirth Connect and pgAdmin4 in with this script.
+After the ubuntu-based distro's is first setup, you can install Mirth Connect and pgAdmin4 in with this script. I made this script for my job.
 
 Download script with wget.
 
