@@ -49,8 +49,8 @@ echo "${Green}Installing Wine.."${NC}
 apt update >/dev/null 2>&1
 apt install --install-recommends winehq-stable -y >/dev/null 2>&1
 
-echo "${Green}Installing libreoffice, thunderbird, putty, steam, anydesk, flameshot, sublime-text, vlc, filezilla, deluge, gparted and brave browser.."${NC}
-packages="libreoffice thunderbird putty steam anydesk flameshot sublime-text vlc filezilla deluge brave-browser gparted"
+echo "${Green}Installing libreoffice, thunderbird, putty, steam, anydesk, flameshot, sublime-text, vlc, filezilla, deluge, gparted, brave browser and icedtea..."${NC}
+packages="libreoffice thunderbird putty steam anydesk flameshot sublime-text vlc filezilla deluge brave-browser gparted icedtea-next"
 for i in $packages; do
   apt install -y $i > /dev/null 2>&1
 done
