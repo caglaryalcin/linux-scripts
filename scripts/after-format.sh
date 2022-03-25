@@ -25,6 +25,8 @@ xrandr -s 1920x1080 &> /dev/null
 
 echo "${Green}System Updating.."${NC}
 sleep 1
+wget -qO- https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add - >/dev/null 2>&1
+echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list > /dev/null
 apt install apt-transport-https curl -y > /dev/null 2>&1
 curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list > /dev/null
@@ -42,8 +44,8 @@ chmod +x VMware-Workstation-*.bundle
 ./VMware-Workstation-*.bundle >/dev/null 2>&1
 cd /
 
-echo "${Green}Installing libreoffice, thunderbird, putty, steam, anydesk, flameshot, sublime-text, vlc, filezilla, deluge, gparted, brave browser and icedtea..."${NC}
-packages="libreoffice thunderbird putty steam anydesk flameshot sublime-text vlc filezilla deluge brave-browser gparted icedtea-next"
+echo "${Green}Installing libreoffice, thunderbird, putty, steam, anydesk, flameshot, sublime-text, vlc, filezilla, deluge, gparted, brave browser, icedtea and signal..."${NC}
+packages="libreoffice thunderbird putty steam anydesk flameshot sublime-text vlc filezilla deluge brave-browser gparted icedtea-next signal-desktop"
 for i in $packages; do
   apt install -y $i > /dev/null 2>&1
 done
