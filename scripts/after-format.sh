@@ -31,9 +31,6 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
 add-apt-repository multiverse
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add - >/dev/null 2>&1
 echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list > /dev/null
-wget -nc https://dl.winehq.org/wine-builds/winehq.key >/dev/null 2>&1
-apt-key add winehq.key >/dev/null 2>&1
-add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' >/dev/null 2>&1
 sudo apt-get -qq update && sudo apt-get -qq upgrade -y >/dev/null 2>&1
 
 echo "${Green}Installing vMware Workstation.."${NC}
@@ -45,15 +42,10 @@ chmod +x VMware-Workstation-*.bundle
 ./VMware-Workstation-*.bundle >/dev/null 2>&1
 cd /
 
-echo "${Green}Installing Wine.."${NC}
-apt update >/dev/null 2>&1
-apt install --install-recommends winehq-stable -y >/dev/null 2>&1
-
 echo "${Green}Installing libreoffice, thunderbird, putty, steam, anydesk, flameshot, sublime-text, vlc, filezilla, deluge, gparted, brave browser and icedtea..."${NC}
 packages="libreoffice thunderbird putty steam anydesk flameshot sublime-text vlc filezilla deluge brave-browser gparted icedtea-next"
 for i in $packages; do
   apt install -y $i > /dev/null 2>&1
 done
 
-rm -rf winehq.key
 rm -rf dark.sh
