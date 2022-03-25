@@ -76,6 +76,6 @@ This script does exactly the following;
 
 <details><summary>dark.sh</summary>&nbsp;
   
-This script just does sets dark theme for Linux Mint Cinnamon.
+This script just does sets dark theme for Linux Mint (Cinnamon) or Gnome based distros.
   
 </details>
