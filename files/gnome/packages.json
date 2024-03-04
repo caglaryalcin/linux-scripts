@@ -1,6 +1,6 @@
 {
   "packages": [
-    "nginx",
+    "steam",
     "python3",
     "git",
     "libreoffice",
@@ -14,7 +14,16 @@
     "deluge",
     "gparted",
     "brave-browser",
-    "icedtea-next",
-    "signal-desktop"
+    "icedtea-netx",
+    "signal-desktop",
+	"vlc",
+	"chromium-browser",
+	"brave-browser",
+	"nodejs",
+	"speedtest-cli",
+	"wireshark",
+	"deluge",
+	"7zip",
+	"flameshot"
   ]
 }
