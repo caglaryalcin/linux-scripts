@@ -1,3 +1,18 @@
 {
-  "packages": ["libreoffice", "thunderbird", "putty", "steam", "anydesk", "flameshot", "sublime-text", "vlc", "filezilla", "deluge", "gparted", "brave-browser", "icedtea-next", "signal-desktop"]
+  "packages": [
+    "libreoffice",
+    "thunderbird",
+    "putty",
+    "steam",
+    "anydesk",
+    "flameshot",
+    "sublime-text",
+    "vlc",
+    "filezilla",
+    "deluge",
+    "gparted",
+    "brave-browser",
+    "icedtea-next",
+    "signal-desktop"
+  ]
 }
