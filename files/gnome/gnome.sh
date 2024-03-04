@@ -20,20 +20,20 @@ nc -z 1.1.1.1 53  >/dev/null 2>&1
 online=$?
 if [ $online -eq 0 ]; then
     echo -n "The network is up..."
-	echo -e "${Green}[DONE]" ${NC}
+    echo -e "${Green}[DONE]" ${NC}
 else
     echo -e "The network is down..." ${RED}
-		exit
+    exit
 fi
 echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
     echo -n "DNS resolve is up..."
-	echo -e "${Green}[DONE]" ${NC}
+    echo -e "${Green}[DONE]" ${NC}
 else
     echo -n "DNS not resolved..."
-	echo -e "${RED}[WARNING]" ${NC}
-		exit
+    echo -e "${RED}[WARNING]" ${NC}
+    exit
 fi
 echo
 
@@ -54,7 +54,7 @@ if ! command -v gnome-tweaks &>/dev/null; then
 fi
 
 if gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark' &>/dev/null; then
-	echo -n "Setting Dark theme..."
+    echo -n "Setting Dark theme..."
     echo -e "${Green}[DONE]${NC}"
 else
     echo -e "${RED}[FAILED]${NC}"
@@ -67,24 +67,28 @@ echo
 echo -n "System Updating..."
 {
     sleep 1
+    # signal key
     wget -qO- https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add - >/dev/null 2>&1
     echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list >/dev/null 2>&1
+    # brave key
     apt install apt-transport-https curl -y > /dev/null 2>&1
     curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg >/dev/null 2>&1
     echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list >/dev/null 2>&1
+    # multiverse repo
     echo | sudo add-apt-repository multiverse >/dev/null 2>&1
+    # anydesk key
     wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add - >/dev/null 2>&1
     echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list >/dev/null 2>&1
     sudo apt-get -qq update
-	
-	
+    
+    
 } >/dev/null 2>&1
 
 echo -e "${Green}[DONE]" ${NC}
 echo -n "System Upgrading..."
 {
-sudo apt-get -qq upgrade -y >/dev/null 2>&1
-
+    sudo apt-get -qq upgrade -y >/dev/null 2>&1
+    
 } >/dev/null 2>&1
 
 #Install Softwares
