@@ -1,18 +1,4 @@
-{
-  "packages": [
-    "libreoffice",
-    "thunderbird",
-    "putty",
-    "steam",
-    "anydesk",
-    "flameshot",
-    "sublime-text",
-    "vlc",
-    "filezilla",
-    "deluge",
-    "gparted",
-    "brave-browser",
-    "icedtea-next",
-    "signal-desktop"
-  ]
-}
+packages:
+  - nginx
+  - python3
+  - git
