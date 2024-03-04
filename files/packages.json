@@ -1,4 +1,7 @@
-packages:
-  - nginx
-  - python3
-  - git
+{
+  "packages": [
+    "nginx",
+    "python3",
+    "git"
+  ]
+}
